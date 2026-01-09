@@ -39,6 +39,12 @@ You are a Data Analyst at a mid-sized game studio tasked with advising leadershi
   - Removed duplicates and incomplete entries  
   - Standardized genre names  
   - Exploded multi-value genre columns for accurate analysis  
+    - Some games belong to multiple genres (e.g., "RPG;Adventure")  
+    - These were split into separate rows so each genre could be analyzed individually  
+    - **Pre-Explosion Example:**  
+      ![Pre-Explosion Example](Images/Pre_Cleaning_Screenshot.png)  
+    - **Post-Explosion Example:**  
+      ![Post-Explosion Example](Images/Post_Cleaning_Screenshot.png)
 
 - **Feature Engineering:**  
   - Created engagement metrics: Avg. playtime per user, peak concurrent users  
@@ -64,7 +70,7 @@ You are a Data Analyst at a mid-sized game studio tasked with advising leadershi
 | **Final Recommendation** | Build a **Paid, Single-Player RPG or Strategy game** to maximize player engagement and review sentiment. |
 
 *Mini snapshot of pivot table example:*  
-![Pivot Table Example](images/pivot_table_example.png)
+![Pivot Table Example](Images/Genre_Engagement_Screenshot.png)
 
 ---
 
@@ -91,7 +97,7 @@ You are a Data Analyst at a mid-sized game studio tasked with advising leadershi
 
 ## 📊 7️⃣ Dashboard
 
-![Steam Game Analysis Dashboard](dashboard/steam_dashboard_screenshot.png)  
+![Steam Game Analysis Dashboard](Dashboard/Steam_Dashboard_Screenshot.png)  
 
 Interactive version: [View Tableau Dashboard](https://public.tableau.com/app/profile/carlos.abrego/viz/SteamMarketAnalysisDashboard/Dashboard2#3)
 
@@ -101,7 +107,10 @@ Interactive version: [View Tableau Dashboard](https://public.tableau.com/app/pro
 
 | File | Description |
 |------|-------------|
-| `steam_analysis.xlsx` | Single annotated Excel workbook containing raw data (read-only), cleaned data, and pivot tables for analysis |
+| `Steam_Analysis.xlsx` | Single annotated Excel workbook containing raw data (read-only), cleaned data, pivot tables for analysis, and feature engineering steps |
+
+**Download Excel Workbook:**  
+[Download Here](Excel/Steam_Analysis.xlsx)  <!-- Replace with your actual cloud link -->
 
 **Workflow Summary:** Excel → Tableau → Insights → Recommendations
 
